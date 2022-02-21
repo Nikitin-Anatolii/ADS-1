@@ -36,6 +36,7 @@ uint64_t nPrime(uint64_t n) {
     v += 1;
     i = 2;
   }
+  return 0;
 }
 uint64_t nextPrime(uint64_t value) {
 // вставьте код функции
@@ -55,12 +56,12 @@ uint64_t nextPrime(uint64_t value) {
 }
 uint64_t sumPrime(uint64_t hbound) {
 // вставьте код функции
-  int sum=0;
+  int sum = 0;
   for (int i = 2; i < hbound; i++) {
     bool f = true;
     for (int j = 2; j < (i / 2) + 1; j++) {
       if (i % j == 0) {
-        f=false;
+        f = false;
         break;
       }
     }

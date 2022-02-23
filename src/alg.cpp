@@ -58,7 +58,7 @@ uint64_t sumPrime(uint64_t hbound) {
 // вставьте код функции
   long long sum = 0;
   for (int i = 2; i < hbound; i++) {
-    if (checkPrime(i)) 
+    if (checkPrime(i))
       sum += i;
   }
   return sum;
